@@ -5,12 +5,15 @@ import java.io.IOException;
 import java.util.Map;
 import java.io.IOException;
 
+/**
+ * Simple brute force implementation of ISymptomWriter
+ */
 
 public class WriteSymptomDataToFile implements ISymptomWriter {
     private String filepath;
 
     /**
-     * @param filepath a full or partial path to file with symptom strings in it, one per line
+     * @param filepath a full or partial path to the folder where we will store ou output
      */
     public WriteSymptomDataToFile(String filepath) {
         this.filepath = filepath;
